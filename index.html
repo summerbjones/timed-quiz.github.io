@@ -9,7 +9,7 @@
     </head>
     <body>
         <!--start quiz button-->
-        <div class ="start_btn">
+        <div class ="startBtn">
             <button>Start Quiz</button>
         </div>
         <!--Info box-->
@@ -19,9 +19,9 @@
             </div>
             <div class = "info-list">
                 <div class = "info">
-                    "1. You will have only"
-                    <span>15 Seconds</span>
-                    "per each question."
+                    1. You will have only
+                    <span>60 Seconds</span>
+                    to complete the quiz
                 </div>
                 <div class = "info">2. Once you select your answer, it can't be undone.</div>
                 <div class = "info">3. You can't select any option once the timer goes off.</div>
@@ -34,31 +34,70 @@
             </div>
         </div>
         <!--quiz box-->
-        <div class = "quiz_box activeQuiz">
+        <div class = "quizBox activeQuiz">
             <header>
-                <div class = "title">Awesome Quiz Application</div>
+                <div class = "title">Coding Quiz Challenge</div>
                 <div class = "timer">
-                    <div class = "time_left_txt">Time Off</div>
-                    <div class = "timer_sec">00</div>
+                    <div class = "time_left_txt">Timer</div>
+                    <div class = "timer_sec">1:00</div>
                 </div>
                 <div class = "time_line" style = "width: 550px;"></div>
             </header>
             <section>
                 <div class = "que_text">
-                    <span>1. What does HTML stand for?</span>
+                    <span>1. Commonly used data types Do not include:</span>
                 </div>
                 <div class = "option_list">
                     <div class = "option disabled" onclick = "optionSelected(this)">
-                    <span>Hyper Text Preprocessor</span>
+                    <span>strings</span>
                 </div>
                 <div class = "option correct disabled" onclick = "optionSelected(this)">
-                <span>Hyper Text Markup Language</span>
+                <span>booleans</span>
                 <div class = "icon tick">
-                    <i class = "fas fa-check"
+                    <i class = "fas fa-check"></i>
                 </div>
+                </div>
+                <div class = "option disabled" onclick = "optionSelected(this)">
+                <span>alerts</span>
+                </div>
+                <div class = "option disabled" onclick = "optionSelected(this)">
+                <span>numbers</span>
                 </div>
                 </div>
             </section>
+            <!--footer of quiz box-->
+            <footer>
+                <div class = "total_que">
+                    <span>
+                        <p>1</p>
+                         of 
+                        <p>5</p>
+                         Questions
+                    </span>
+                </div>
+                <button class = "next_btn show">Next Question</button>
+            </footer>
         </div>
+        <!--Result box-->
+        <div class = "result_box">
+            <div class = "icon">
+                <i class = "fas fa-crown"></i>
+            </div>
+            <div class = "complete_text">You have completed the quiz!</div>
+            <div class = "score_text">
+                <span>
+                    "and congrats! you got "
+                    <p>4</p>
+                    "out of"
+                    <p>5</p>
+                </span>
+            </div>
+            <div class = "buttons">
+                <button class = "restart"> Replay Quiz</button>
+                <button class = "quit">Quit Quiz</button>
+            </div>
+        </div>
+        <script src = "assets/js/questions.js"></script>
+        <script src = "assets/js/script.js"></script>
     </body>
 </html>
